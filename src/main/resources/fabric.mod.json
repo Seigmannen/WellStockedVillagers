@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "wellstockedvillagers",
+	"version": "${version}",
+	"name": "Well-Stocked Villagers",
+	"description": "Server-side: every villager trade can be used 12 times before locking, and villagers can restock 2-10 times per day (default 2, set with /wsv restocks). Configurable in config/wellstockedvillagers.json.",
+	"authors": [
+		"Seigmannen"
+	],
+	"license": "MIT",
+	"icon": "assets/wellstockedvillagers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.seigmannen.wellstockedvillagers.WellStockedVillagers"
+		]
+	},
+	"mixins": [
+		"wellstockedvillagers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
